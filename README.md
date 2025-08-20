@@ -125,6 +125,34 @@ A full-stack application to estimate cloud costs across regions and resource typ
 | resource_id | BIGINT | Foreign key referencing `Resource.id`      |
 
 ---
+## 🛠️ Common Troubleshooting
+
+### Backend Issues
+- **Port 8080 already in use** → Kill the process using the port or change the server port.
+- **Database connection failed** → Verify PostgreSQL is running and credentials are correct.
+- **Maven build fails** → Ensure Java 21+ is installed and `JAVA_HOME` is set.
+
+### Frontend Issues
+- **Port 3000 in use** → The app will try port 3001, or set `PORT=3001`.
+- **API connection failed** → Verify backend is running on port 8080.
+- **`npm install` fails** → Clear npm cache with `npm cache clean --force`.
+
+### Database Issues
+- **Database doesn't exist** → Create the `resource_estimator` database.
+- **Permission denied** → Grant proper privileges to the database user.
+- **Connection refused** → Check if PostgreSQL service is running.
+
+### Log Locations
+- **Backend logs**: Console output or logs/ directory if configured.
+- **Frontend logs**: Browser console for runtime errors.
+- **Database logs**: PostgreSQL log directory.
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
 
 
 
