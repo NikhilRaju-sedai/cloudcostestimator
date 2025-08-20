@@ -2,6 +2,7 @@
 
 A full-stack application to estimate cloud costs across regions and resource types. Users can select regions, resources (compute, database, storage), and specify units to calculate total costs dynamically. A detailed bill with breakdowns is also available.  
 
+
 ---
 
 ## 📌 Features  
