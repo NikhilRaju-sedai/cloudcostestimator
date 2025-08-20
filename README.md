@@ -95,5 +95,8 @@ A full-stack application to estimate cloud costs across regions and resource typ
 5. Users can generate a **detailed bill** with all selected resources.  
 
 
-![Bill CloudCost Screenshot](screenshot/Bill_CloudCost.png)
 ![Frontend CloudCost Screenshot](screenshot/Frontend_CloudCost.png)
+![Bill CloudCost Screenshot](screenshot/Bill_CloudCost.png)
+[Watch Demo Video](videos/Screencast%20from%202025-08-20%2016-31-45.webm)
+
+
