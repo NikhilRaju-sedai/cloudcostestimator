@@ -97,6 +97,34 @@ A full-stack application to estimate cloud costs across regions and resource typ
 
 ![Frontend CloudCost Screenshot](screenshot/Frontend_CloudCost.png)
 ![Bill CloudCost Screenshot](screenshot/Bill_CloudCost.png)
+## 🎥 Demo Video
 [Watch Demo Video](videos/Screencast%20from%202025-08-20%2016-31-45.webm)
+
+
+## 🗂️ Database Schema
+
+### **Region Table**
+| Column Name | Type     | Description                     |
+|-------------|---------|---------------------------------|
+| id          | BIGINT  | Primary key, unique region ID   |
+| name        | VARCHAR | Name of the region              |
+| code        | VARCHAR | Region code (optional)          |
+
+### **Resource Table**
+| Column Name | Type     | Description                                  |
+|-------------|---------|----------------------------------------------|
+| id          | BIGINT  | Primary key, unique resource ID             |
+| name        | VARCHAR | Name of the resource                         |
+| type        | VARCHAR | Type of resource (Compute, DB, Storage, etc.) |
+| cost        | DECIMAL | Cost per unit                                |
+
+### **Region_Resource Relationship**
+| Column Name | Type   | Description                                 |
+|-------------|--------|---------------------------------------------|
+| region_id   | BIGINT | Foreign key referencing `Region.id`        |
+| resource_id | BIGINT | Foreign key referencing `Resource.id`      |
+
+---
+
 
 
