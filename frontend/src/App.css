@@ -1,0 +1,42 @@
+.Appname {
+  font-family: Verdana;
+  font-size: 3.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  margin: 2rem 0;
+
+  /* Gradient text */
+  background: linear-gradient(135deg, #1a4cd4, #4f9dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Text shadow for depth */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+  /* Subtle animation */
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.Appname:hover {
+  transform: scale(1.05);
+  letter-spacing: 4px;
+}
+
+
+
+
+.App {
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
